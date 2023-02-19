@@ -8,7 +8,7 @@
       "python",
       "compose"
     ],
-    "repository": "https://github.com/mrrk137/deployer",
+    "repository": "https://github.com/mrrk137/compose",
     "stack": "container",
     "env": {
       "ENV": {
