@@ -1,9 +1,10 @@
 {
-    "name": "ComposeLobster",
-    "description": "web app to manager database",
+    "name": "Compose Lobster",
+    "description": "web app to manage database ",
     "logo": "https://telegra.ph/file/3c4237dd056fcc3ed36d4.jpg",
     "keywords": [
       "web",
+      "database",
       "python",
     ],
     "repository": "https://github.com/mrrk137/deployer",
