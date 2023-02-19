@@ -1,0 +1,21 @@
+{
+    "name": "ComposeLobster",
+    "description": "web app to manager database",
+    "logo": "https://telegra.ph/file/3c4237dd056fcc3ed36d4.jpg",
+    "keywords": [
+      "web",
+      "python",
+    ],
+    "repository": "https://github.com/mrrk137/deployer",
+    "stack": "container",
+    "env": {
+      "ENV": {
+        "description": "Setting this to ANYTHING will enable Webhooks when in env mode",
+        "value": "ANYTHING"
+      },
+      "CONFIG_FILE_URL": {
+        "description": "Your config URL.",
+        "required": true
+      }
+    }
+}
