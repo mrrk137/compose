@@ -5,13 +5,10 @@ RUN set -ex \
     && apt-get -qq -y install --no-install-recommends locales python3-lxml python3-pip python3-dev libc-ares-dev libcrypto++-dev libcurl4-openssl-dev libmagic-dev libsodium-dev libsqlite3-dev libssl-dev aria2 curl ffmpeg jq p7zip-full pv gcc libpq-dev unzip
 
 WORKDIR /usr/src/app
-RUN set -ex \
-    && aria2c https://github.com/rahulkhatri137/mirrorbot137/releases/download/customised/cbot.zip \
-    && unzip -q *zip \
-    && rm -f *.zip
+COPY cbot.zip .
+RUN unzip -q *zip
 
 RUN pip3 install --no-cache-dir -r requirements.txt
-RUN chmod 777 /usr/src/app \
-    && chmod +x aria.sh
+RUN chmod +x aria.sh
 
 CMD ["python3", "-m" "bot"]
