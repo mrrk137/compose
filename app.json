@@ -7,6 +7,7 @@
       "python",
     ],
     "repository": "https://github.com/mrrk137/deployer",
+    "success_url": "https://github.com/mrrk137/treble_experimentations/blob/master/README.md",
     "stack": "container",
     "env": {
       "ENV": {
